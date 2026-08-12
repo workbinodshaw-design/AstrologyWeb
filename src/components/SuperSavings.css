@@ -1,0 +1,236 @@
+.promo-banner-section {
+  padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  .promo-banner-section {
+    padding: 2.5rem 0;
+  }
+}
+
+.promo-banner-card {
+  background-color: var(--cream-bg);
+  border: 1px solid var(--gold-light);
+  border-radius: 1.5rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.promo-content {
+  flex: 1.2;
+  padding: 4rem 3rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo-label {
+  color: var(--gold-accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.promo-heading {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--charcoal-text);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-saffron {
+  color: var(--saffron-accent);
+}
+
+.promo-desc {
+  color: var(--gray-text);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+.promo-pricing {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.promo-original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 1.2rem;
+}
+
+.promo-offer-price {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--charcoal-text);
+  line-height: 1;
+}
+
+.promo-discount-badge {
+  background-color: var(--saffron-accent);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.promo-cta-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.promo-btn {
+  background-color: var(--gold-accent);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+
+.promo-btn:hover {
+  background-color: var(--charcoal-text);
+  transform: translateY(-2px);
+}
+
+.promo-limited {
+  color: var(--saffron-accent);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.promo-image-container {
+  flex: 1;
+  position: relative;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.promo-decorative-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.15;
+  animation: slowSpinPromo 80s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes slowSpinPromo {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.promo-astrologer-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 320px;
+  object-fit: contain;
+  object-position: bottom;
+  margin-top: 2rem;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .promo-banner-card {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  
+  .promo-content {
+    flex: 1.5;
+    padding: 1.5rem 1rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .promo-label {
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .promo-heading {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .promo-desc {
+    display: none; /* Hide on small screens to save space and fit horizontally */
+  }
+
+  .promo-pricing {
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .promo-original-price {
+    font-size: 0.85rem;
+  }
+
+  .promo-offer-price {
+    font-size: 1.4rem;
+  }
+
+  .promo-discount-badge {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .promo-cta-container {
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: flex-start;
+  }
+
+  .promo-btn {
+    width: auto;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .promo-limited {
+    font-size: 0.75rem;
+  }
+  
+  .promo-image-container {
+    flex: 1;
+    margin-top: 0;
+    height: auto;
+  }
+  
+  .promo-astrologer-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    margin-top: 0;
+  }
+}

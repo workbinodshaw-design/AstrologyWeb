@@ -1,0 +1,141 @@
+.super-savings-page {
+  background-color: var(--white-bg);
+  min-height: calc(100vh - 100px);
+}
+
+.savings-hero {
+  padding: 4rem 0 3rem;
+  background-color: var(--cream-bg);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.offers-section {
+  padding: 5rem 0;
+  background-color: var(--white-bg);
+}
+
+.offers-grid-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.offer-card-page {
+  background-color: var(--cream-bg);
+  border-radius: var(--card-radius);
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--gold-light);
+  box-shadow: var(--soft-shadow);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.offer-card-page:hover {
+  transform: translateY(-5px);
+}
+
+.offer-badge {
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background: var(--gold-accent);
+  color: white;
+  padding: 5px 30px;
+  transform: rotate(45deg);
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.offer-title-page {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--charcoal-text);
+  min-height: 55px;
+}
+
+.offer-price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.price-original {
+  color: var(--gray-text);
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.price-discounted {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--charcoal-text);
+  line-height: 1;
+}
+
+.offer-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.offer-benefits li {
+  font-size: 0.95rem;
+  color: var(--gray-text);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.offer-benefits li::before {
+  content: "✓";
+  color: var(--gold-accent);
+  font-weight: bold;
+}
+
+.why-book-section {
+  padding: 5rem 0;
+  background-color: var(--cream-bg);
+  border-top: 1px solid var(--light-border);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.reason-card {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--white-bg);
+  border-radius: var(--card-radius);
+  border: 1px solid var(--light-border);
+}
+
+.reason-card h4 {
+  font-size: 1.1rem;
+  color: var(--charcoal-text);
+}
+
+@media (min-width: 1200px) {
+  .offers-grid-page {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .offers-grid-page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

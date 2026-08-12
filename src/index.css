@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --cream-bg: #FCFbf7;
+  --white-bg: #FFFFFF;
+  --gold-accent: #d4af37;
+  --gold-hover: #c4a133;
+  --gold-light: rgba(212, 175, 55, 0.1);
+  --saffron-accent: #D97736;
+  --saffron-light: rgba(217, 119, 54, 0.1);
+  --charcoal-text: #2d3134;
+  --gray-text: #666666;
+  --light-border: rgba(0, 0, 0, 0.08);
+  --soft-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  --card-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--cream-bg);
+  color: var(--charcoal-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .logo-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: var(--charcoal-text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Common Buttons */
+.btn-primary {
+  background-color: var(--gold-accent);
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: var(--gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--white-bg);
+  color: var(--charcoal-text);
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 500;
+  border: 1px solid var(--charcoal-text);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.btn-secondary:hover {
+  background-color: var(--charcoal-text);
+  color: #fff;
+}
+
+/* Utility classes */
+.text-gold {
+  color: var(--gold-accent);
+}
