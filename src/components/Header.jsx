@@ -17,9 +17,8 @@ export default function Header() {
         </div>
         
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
-          <a href="/#home" onClick={closeMenu}>Home</a>
+          <Link to="/" onClick={closeMenu}>Home</Link>
           <Link to="/services" onClick={closeMenu}>Services</Link>
-          <a href="/#vastu" onClick={closeMenu}>Vastu Consultation</a>
           <Link to="/store" onClick={closeMenu}>Store</Link>
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>

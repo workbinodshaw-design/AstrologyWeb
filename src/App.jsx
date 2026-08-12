@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import BookConsultation from './pages/BookConsultation';
 import ServicesPage from './pages/ServicesPage';
@@ -8,7 +8,7 @@ import StorePage from './pages/StorePage';
 
 function App() {
   return (
-    <Router basename="/AstrologyWeb">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
