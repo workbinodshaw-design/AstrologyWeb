@@ -8,7 +8,7 @@ import StorePage from './pages/StorePage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/AstrologyWeb">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
